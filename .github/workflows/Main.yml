@@ -12,7 +12,7 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: sleep 5
-    - run: ./cool_script.sh
+    - run: ../cool_script.sh
 
         
   better_action:
