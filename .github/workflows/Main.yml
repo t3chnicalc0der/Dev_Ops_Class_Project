@@ -27,7 +27,7 @@ jobs:
     env:
       name: jerry
       steps:
-      - run: echo "Hello World"
-      - run: echo "Hello $name" # name is the env var name, we acess it with $var
-      - run: echo $app_name
-      - run: echo "${{secrets.SECRET_PASSWORD}}"
+        - run: echo "Hello World"
+        - run: echo "Hello $name" # name is the env var name, we acess it with $var
+        - run: echo $app_name
+        - run: echo "${{secrets.SECRET_PASSWORD}}"
