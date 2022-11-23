@@ -1,0 +1,20 @@
+name: Reece
+fav_colour: Purple
+location: Wales
+age: 27
+number: "07364"
+
+swim: true
+fav_word: "false"
+fav_foods:
+- yaki udon # very important it's _ (dash + space)
+- peanut butter toast
+- mango
+
+pet: My dog is corgi, who is fluffy, tri colour and bites me 
+#better way
+better_pet:
+name: Boba #All below key value pairs are the value of better pet
+breed: Corgi
+fluffy: true
+bites_me: true

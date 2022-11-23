@@ -1,0 +1,11 @@
+#5 key value paurs
+fav_colour: blue
+fav_food: spicy_curry
+fav_clothes: t shirt
+height: 5foot5
+weight 50kg
+
+fav_console : xbox
+  fav_games:
+    cyberpunk,
+    cod
