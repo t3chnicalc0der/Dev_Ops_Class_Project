@@ -13,3 +13,12 @@ jobs:
     - run: pwd
     - run: sleep 10
     - run: ./cool_script.sh
+      /bin/bash
+
+        
+  better_action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3 # Checking out and using the repo assigned to this workflow
+    - run: chmod +x cool_script.sh # Granting permission access to our script
+    - run: ./cool_script.sh # Running our script
