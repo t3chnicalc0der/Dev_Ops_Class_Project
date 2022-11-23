@@ -12,8 +12,8 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: sleep 10
-  
-better_action:
+job:
+  better_action:
   runs-on: ubuntu-latest
   steps:
   - uses: actions/checkout@v3 # Checking out and using the repo assinged to this workflow
