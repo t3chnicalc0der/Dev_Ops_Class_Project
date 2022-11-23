@@ -6,5 +6,7 @@ let favFoods = {
     fizzy_drinks,
     chicken,
     fish,
-    meat
+    meat,
+    gulabjam,
+    roshmali
 }
