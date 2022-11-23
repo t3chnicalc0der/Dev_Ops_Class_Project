@@ -11,7 +11,7 @@ jobs:
     - run: echo "Hello World!!"
     - run: ls -a
     - run: pwd
-    - run: sleep 10
+    - run: sleep 5
     - run: ./cool_script.sh
 
         
