@@ -22,10 +22,10 @@ jobs:
     - run: chmod +x cool_script.sh # Granting permission access to our script
     - run: ./cool_script.sh # Running our script
 
-    env_var_job:
-      runs-on: ubuntu-latest
-      env:
-        name: jerry
+  env_var_job:
+    runs-on: ubuntu-latest
+    env:
+      name: jerry
       steps:
       - run: echo "Hello World"
       - run: echo "Hello $name" # name is the env var name, we acess it with $var
