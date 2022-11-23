@@ -21,3 +21,13 @@ jobs:
     - uses: actions/checkout@v3 # Checking out and using the repo assigned to this workflow
     - run: chmod +x cool_script.sh # Granting permission access to our script
     - run: ./cool_script.sh # Running our script
+
+    env_var_job:
+      runs-on: ubuntu-latest
+      env:
+        name: jerry
+      steps:
+      - run: echo "Hello World"
+      - run: echo "Hello $name" # name is the env var name, we acess it with $var
+      - run: echo $app_name
+      - run: echo "${{secrets.SECRET_PASSWORD}}"
