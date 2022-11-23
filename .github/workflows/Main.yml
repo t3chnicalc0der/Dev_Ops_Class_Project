@@ -3,19 +3,19 @@ name: Git Actions Demo
 # The workflow / CI Server runs / triggers when there is a push to the repo 
 on: [push]
 # What jobs do we want as part of our workflow
-# jobs:
-#   actions_demo:
-#     runs-on: ubuntu-latest  # Creating a container (virtual machine) that uses ubuntu
-#     # What do we want this machine to do?
-#     steps: 
-#     - run: echo "Hello World!!"
-#     - run: ls -a
-#     - run: pwd
-#     - run: sleep 10
+jobs:
+  actions_demo:
+    runs-on: ubuntu-latest  # Creating a container (virtual machine) that uses ubuntu
+    # What do we want this machine to do?
+    steps: 
+    - run: echo "Hello World!!"
+    - run: ls -a
+    - run: pwd
+    - run: sleep 10
 jobs:
   better_action:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
   - uses: actions/checkout@v3 # Checking out and using the repo assinged to this workflow
   - run: chmod +x cool_script.sh # Granting permsision access to our script
   - run: git clone --single-branch --branch start https://github.com/t3chnicalc0der/Dev_Ops_Class_Project.git
