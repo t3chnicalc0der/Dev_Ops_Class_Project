@@ -7,6 +7,5 @@ let favFoods = {
     chicken,
     fish,
     meat,
-    gulabjam,
-    roshmali
+
 }
